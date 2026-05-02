@@ -81,7 +81,9 @@ Pure semantic search struggles with closely related standards (e.g. IS 269 vs IS
 ---
 
 ## Project Structure
+## Project Structure
 
+```text
 bis_rag_submission/
 ├── inference.py         # Judge entry point
 ├── eval_script.py      # Evaluation metrics (Hit@3, MRR@5, latency)
@@ -98,7 +100,7 @@ bis_rag_submission/
 │   └── generate_eval.py # Synthetic test set generator
 └── data/
     ├── public_test_set.json   # 10 public evaluation queries
-    ├── eval_ready.json        # 50-query evaluation set
+    ├── eval_ready.json        # 50-query evaluation set (10 public + 40 synthetic)
     └── eval_output.json       # Pre-run evaluation results
 
 ---
