@@ -83,23 +83,23 @@ Pure semantic search struggles with closely related standards (e.g. IS 269 vs IS
 ## Project Structure
 
 bis_rag_submission/
-├── inference.py              # Judge entry point
-├── eval_script.py            # Evaluation metrics (Hit@3, MRR@5, latency)
-├── app.py                    # Gradio demo UI
-├── requirements.txt
-├── run_eval.sh               # One-command evaluation helper
+├── inference.py         # Judge entry point
+├── eval_script.py      # Evaluation metrics (Hit@3, MRR@5, latency)
+├── app.py              # Gradio demo UI
+├── requirements.txt    # Dependency list
+├── run_eval.sh         # One-command evaluation helper
 ├── src/
-│   ├── config.py             # All hyperparameters and paths
-│   ├── ingest.py             # PDF parsing + ChromaDB ingestion
-│   ├── retriever.py          # Hybrid BM25 + vector retrieval
-│   ├── generator.py          # Gemini rationale + query expansion
-│   └── utils.py              # Shared utilities
+│   ├── config.py       # Hyperparameters and paths
+│   ├── ingest.py       # PDF parsing + ChromaDB ingestion
+│   ├── retriever.py    # Hybrid BM25 + vector retrieval
+│   ├── generator.py    # Gemini rationale + query expansion
+│   └── utils.py        # Shared utilities
 ├── scripts/
-│   └── generate_eval.py      # Synthetic test set generator
+│   └── generate_eval.py # Synthetic test set generator
 └── data/
-    ├── public_test_set.json  # 10 public evaluation queries
-    ├── eval_ready.json       # 50-query evaluation set (10 public + 40 synthetic)
-    └── eval_output.json      # Pre-run evaluation results
+    ├── public_test_set.json   # 10 public evaluation queries
+    ├── eval_ready.json        # 50-query evaluation set
+    └── eval_output.json       # Pre-run evaluation results
 
 ---
 
