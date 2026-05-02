@@ -102,6 +102,7 @@ bis_rag_submission/
     ├── public_test_set.json   # 10 public evaluation queries
     ├── eval_ready.json        # 50-query evaluation set (10 public + 40 synthetic)
     └── eval_output.json       # Pre-run evaluation results
+```
 
 ---
 
